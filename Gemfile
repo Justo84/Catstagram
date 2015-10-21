@@ -53,4 +53,5 @@ group :development, :test do
     gem 'shoulda'
     gem 'quiet_assets'
     gem 'simple_form'
+    gem 'carrierwave'
 end
