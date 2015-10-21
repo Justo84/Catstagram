@@ -91,7 +91,10 @@ RSpec.configure do |config|
 =end
 
 require 'capybara/rails'
-  require 'capybara/rspec'
-  require 'valid_attribute'
-  
+require 'capybara/rspec'
+require 'valid_attribute'
+
 end
+require 'capybara/rails'
+require 'capybara/rspec'
+require 'valid_attribute'
