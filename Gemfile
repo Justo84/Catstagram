@@ -33,6 +33,8 @@ gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'simple_form'
+gem 'carrierwave'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,6 +54,5 @@ group :development, :test do
     gem 'valid_attribute'
     gem 'shoulda'
     gem 'quiet_assets'
-    gem 'simple_form'
-    gem 'carrierwave'
+    gem 'orderly'
 end
