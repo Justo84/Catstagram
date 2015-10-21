@@ -13,4 +13,10 @@ class PostsController < ApplicationController
       flash.now[:notice] = "There were some errors with your Post."
       render :new
     end
+  end
+
+  protected
+  def post_params
+    # Notice we are not permitting the user_id to be passed in.  This prevents users from creating posts that belong to another user.
+    params.requires(:post).permit(:image, :descriptions)
 end
