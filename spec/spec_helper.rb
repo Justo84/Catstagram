@@ -29,6 +29,8 @@ RSpec.configure do |config|
     # ...rather than:
     #     # => "be bigger than 2"
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+    # Add this to include our new helper in all of our tests
+    config.include Helpers::Authentication
   end
 
   # rspec-mocks config goes here. You can use an alternate test double
@@ -95,6 +97,3 @@ require 'capybara/rspec'
 require 'valid_attribute'
 
 end
-require 'capybara/rails'
-require 'capybara/rspec'
-require 'valid_attribute'
