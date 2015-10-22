@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   resources :posts, only: [:index, :new, :create] do
-    resources :meows, only: [:create]
+    resources :meows, only: [:create, :destroy]
   end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

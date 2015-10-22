@@ -1,7 +1,10 @@
 require 'spec_helper'
 
+
 describe User do
   
+  it { should have_many(:meows).dependent(:destroy) }
+
   it { should have_many(:posts).dependent(:destroy) }
 
   describe "#password" do
